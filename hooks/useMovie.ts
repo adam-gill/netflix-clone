@@ -1,17 +1,22 @@
-import useSwr from 'swr'
-import fetcher from '@/libs/fetcher';
+import fetcher from "@/libs/fetcher";
+import useSWR from "swr";
 
-const useMovie = (id?: string) => {
-  const { data, error, isLoading } = useSwr(id ? `/api/movies/${id}` : null, fetcher, {
-    revalidateIfStale: false,
-    revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-  });
+const useMovie = (movieId?: string) => {
+  const { data, error, isLoading } = useSWR(
+    movieId ? `/api/movies/${movieId}` : null,
+    fetcher,
+    {
+      revalidateIfStale: false,
+      revalidateOnFocus: false,
+      revalidateOnReconnect: false,
+    }
+  );
+
   return {
     data,
     error,
-    isLoading
-  }
+    isLoading,
+  };
 };
 
 export default useMovie;

@@ -1,31 +1,37 @@
-# Building a Fullstack Netflix Clone with React, NextJS, TailwindCSS & Prisma
+# Letflix - Netflix Clone
 
-![image](https://user-images.githubusercontent.com/23248726/220005380-ede4fb14-0b8d-4582-a063-3cc4beeccfb7.png)
+Welcome to the Letflix repository! Letflix is a streaming service application, a Netflix clone, designed to provide users with a personalized and interactive movie-watching experience. With user authentication and the ability to select an account, Letflix offers a curated list of available movies for users to enjoy. Additionally, users can add movies to their watchlist for later viewing.
 
-This is a repository for a FullStack Netflix Clone tutorial using React, NextJS, TailwindCSS & Prisma.
+<div align="left">
+  <img height="400" src="https://res.cloudinary.com/dvlinx4rz/image/upload/v1700224005/Letflix-clone-wp_bq1vkk.png"  />
+</div>
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=mqUN4N2q4qY)
+###
 
-Features:
+## Features
 
-- Environment, Typescript, NextJS Setup
-- MongoDB & Prisma connect, Database creation
-- Authentication with NextAuth, Google & Github Login
-- Full responsiveness on all pages
-- Cookie based authentication
-- API and Controllers creation
-- Detail-oriented effects and animations using TailwindCSS
-- React SWR data fetching
-- Zustand state management
+- **User Authentication:** Users can sign in using their GitHub or Google accounts.
+- **Account Selection:** Choose the account that suits your preferences.
+- **Browse Movies:** Explore a diverse collection of movies available for streaming.
+- **Watchlist:** Add movies to your watchlist for future viewing.
+- **Responsive Design:** Enjoy Letflix on various devices with a responsive and user-friendly interface.
+  
+ ## Technologies Used
 
-### Prerequisites
+- React
+- Tailwind CSS
+- Next.js
+- Prisma
+- MongoDB
+- NextAuth
+- Vercel
 
-**Node version 14.x**
+## Installation and Setup
 
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next-netflix-tutorial.git
+git clone https://github.com/TaurusVB/letflix-wp
 ```
 
 ### Install packages
@@ -36,15 +42,16 @@ npm i
 
 ### Setup .env file
 
-
 ```js
 DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
 NEXTAUTH_JWT_SECRET=
 NEXTAUTH_SECRET=
+
+GITHUB_ID=
+GITHUB_SECRET=
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 ```
 
 ### Start the app
@@ -53,10 +60,3 @@ NEXTAUTH_SECRET=
 npm run dev
 ```
 
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
