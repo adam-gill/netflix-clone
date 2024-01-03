@@ -77,8 +77,8 @@ const Auth = () => {
   return (
     <>
       <Head>
-        <title>Authentication | Letflix</title>
-        <meta name="description" content="Letflix, Authentication page" />
+        <title>Sign In</title>
+        <link rel="icon" href="./netflix-logo.png" />
       </Head>
 
       <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
