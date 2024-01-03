@@ -1,4 +1,6 @@
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { FaArrowLeft } from "react-icons/fa";
+
 
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -20,7 +22,7 @@ const Watch = () => {
 
       <div className=" h-screen w-screen bg-black">
         <nav className=" fixed w-full p-4 z-10 flex flex-row items-center gap-8 bg-black/70">
-          <AiOutlineArrowLeft
+          <FaArrowLeft
             onClick={() => router.push("/")}
             size={40}
             color="white"
