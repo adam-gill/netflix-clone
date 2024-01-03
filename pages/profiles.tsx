@@ -25,7 +25,15 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   };
 }
 
+const images = [
+  "/images/default-blue.png",
+  "/images/default-red.png",
+  "/images/default-slate.png",
+  "/images/default-green.png",
+];
+
 const Profiles = () => {
+  const imgSrc = images[Math.floor(Math.random() *4)];
   const router = useRouter();
   const { data: user } = useCurrentUser();
 
@@ -49,7 +57,7 @@ const Profiles = () => {
             <div onClick={selectProfile}>
               <div className=" group flex-row w-44 mx-auto">
                 <div className="w-44 h-44 rounded-md flex justify-center items-center border-2 border-transparent group-hover:cursor-pointer group-hover:border-white overflow-hidden">
-                  <img src="/images/default-green.png" alt="profile" />
+                  <img src={imgSrc} alt="profile" />
                 </div>
 
                 <div className=" mt-4 text-gray-400 text-2xl text-center group-hover:text-white">
