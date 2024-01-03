@@ -14,11 +14,8 @@ const Watch = () => {
   return (
     <>
       <Head>
-        <title>{data?.title} | Letflix</title>
-        <meta
-          name="description"
-          content={`Letflix, ${data?.title} movie page`}
-        />
+        <title>{data?.title}</title>
+        <link rel="icon" href="./netflix-logo.png" />
       </Head>
 
       <div className=" h-screen w-screen bg-black">

@@ -36,8 +36,8 @@ const Profiles = () => {
   return (
     <>
       <Head>
-        <title>Profiles | Letflix</title>
-        <meta name="description" content="Letflix, Profiles page" />
+        <title>Who&#39;s Watching?</title>
+        <link rel="icon" href="./netflix-logo.png" />
       </Head>
 
       <div className="flex items-center h-full justify-center">

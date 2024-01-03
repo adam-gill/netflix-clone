@@ -37,8 +37,8 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Letflix</title>
-        <meta name="description" content="Letflix, Home page" />
+        <link rel="icon" href="./netflix-logo.png" />
+        <title>Netflix</title>
       </Head>
 
       <InfoModal visible={isOpen} onClose={closeModal} />
